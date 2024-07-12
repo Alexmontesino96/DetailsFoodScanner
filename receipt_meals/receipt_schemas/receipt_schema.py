@@ -4,9 +4,6 @@ from typing import List, Optional, Dict
 import requests
 from product_identifier.product_schema.product import Nutrition, Nutrient
 
-response = requests.get(f'https://api.spoonacular.com/recipes/716429/information?includeNutrition=false&apiKey=0f03d338669640b6b1e5453a39a1a621')
-receipt = response.json()
-print(receipt.keys())
 
 class Measures(BaseModel):
     amount: float
